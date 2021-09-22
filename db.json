@@ -1,0 +1,64 @@
+{
+    "questions": [
+      {
+        "id": "1",
+        "question": "De acordo com o conceito de cidadania, qual opção encontra-se incorreta?",
+        "answer": "Condição de pessoa que não se acha no gozo de deveres, apenas de direitos",
+        "options": [
+          "Refere-se a ser membro de um Estado",
+          "Refere-se a uma instituição político-jurídica de inclusão na sociedade",
+          "Condição de pessoa que não se acha no gozo de deveres, apenas de direitos",
+          "É a prática dos direitos e deveres de um indivíduo em um Estado"
+        ]
+      },
+
+      {
+        "id": "2",
+        "question": "De acordo com o conceito de diversidade cultural, qual opção encontra-se incorreta?",
+        "answer": "A diversidade cultural tem sua origem através da igualdade regional entre as culturas",
+        "options": [
+          "Refere-se aos diferentes costumes e tradições de um povo",
+          "Pode ser representada através da língua, crenças e comportamentos",
+          "Refere-se à inclusão de diferentes perspectivas culturais de uma sociedade ",
+          "A diversidade cultural tem sua origem através da igualdade regional entre as culturas",
+          "A diversidade cultural tem sua origem através da igualdade regional entre as culturas"
+        ]
+      },
+
+      {
+        "id": "3",
+        "question": "Qual nome se dá a existência de variadas culturas em uma única região, cidade ou país?",
+        "answer": "Multiculturalismo",
+        "options": [
+          "Multiculturalismo", 
+          "Diversidade cultural", 
+          "Cultura", 
+          "Sociedade"
+        ]
+      },
+
+      {
+        "id": "4",
+        "question": "De acordo com o conceito de diversidade sexual, qual opção encontra-se correta?",
+        "answer": "Tem como eixos fundamentais o sexo biológico, a identidade de gênero e a orientação sexual",
+        "options": [
+          "É um termo usado para se referir apenas ao sexo biológico",
+          "Refere-se ao sexo biológico e a identidade de gênero, sendo excluído a orientação sexual",
+          "Tem como eixos fundamentais o sexo biológico, a identidade de gênero e a orientação sexual",
+          "Não existe ligação entre diversidade cultural e igualdade de gênero "
+        ]
+      },
+
+      {
+        "id": "5",
+        "question": "De acordo com o conceito de entidade familiar, qual opção encontra-se correta?",
+        "answer": "A união de pessoas do mesmo sexo faz parte do conceito de entidade familiar",
+        "options": [
+          "É originada apenas por meio do casamento", 
+          "A união de pessoas do mesmo sexo faz parte do conceito de entidade familiar", 
+          "Entende-se como apenas a união de duas pessoas do sexo oposto", 
+          "Não pode ser originada por meio da união estável" 
+        ]
+      }
+    ]
+}

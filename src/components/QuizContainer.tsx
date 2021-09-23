@@ -1,4 +1,3 @@
-import React from 'react'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardHeader from '@material-ui/core/CardHeader'
@@ -40,6 +39,7 @@ export default function QuizContainer() {
   const classes = useStyles()
 
   return (
+    <>
     <Card className={classes.root}>
       <CardHeader
         title="De acordo com o conceito de cidadania, qual opção encontra-se incorreta?"
@@ -68,5 +68,6 @@ export default function QuizContainer() {
         </List>
       </CardContent>
     </Card>
+    </>
   )
 }

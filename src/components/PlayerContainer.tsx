@@ -1,9 +1,6 @@
-import React from 'react'
-
-function PlayerContainer() {
+const PlayerContainer = ():any => {
   return (
     <div>
-
     </div>
   )
 }

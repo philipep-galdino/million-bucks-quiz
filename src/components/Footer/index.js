@@ -6,8 +6,8 @@ const FooterWrapper = styled.footer`
   padding: 20px;
   display: flex;
   align-items: center;
-  border-radius: 4px; 
-  box-shadow: ${({ theme }) => theme.boxShadow}; 
+  border-radius: 4px;
+  box-shadow: ${({ theme }) => theme.boxShadow};
   img {
     width: 58px;
     margin-right: 23px;
@@ -33,17 +33,20 @@ const FooterWrapper = styled.footer`
 export default function Footer(props) {
   return (
     <FooterWrapper {...props}>
-      <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
-      </a>
       <p>
-        Orgulhosamente criado por Lilit durante
-        {' '}
-        a
-        {' '}
-        <a href="https://www.alura.com.br/">
-          <span>Imersão React da Alura</span>
-        </a>
+      Especialmente produzido e desenvolvido pelos/as seguintes estudantes:
+      <ul>
+        <li>Ian Moreira</li>
+        <li>Leonardo Carvalho</li>
+        <li>Leonardo Couto</li>
+        <li>Luan Chrisler</li>
+        <li>Marília Marques</li>
+        <li>Naionara Maia</li>
+        <li>Vinícius Barros</li>
+        <li>Reinaldo de Oliveira</li>
+        <li>Rewelton Novaes</li>
+      </ul>
+      Todos/as integrantes do IX semestre de Direito da UniFtc.
       </p>
     </FooterWrapper>
   );

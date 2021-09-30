@@ -2,17 +2,15 @@ import React, { useState, useEffect } from 'react';
 
 import db from '../../db.json';
 
-import QuizLogo from '../../src/components/QuizLogo';
 import QuizBackground from '../../src/components/QuizBackground';
 import QuizContainer from '../../src/components/QuizContainer';
 import LoadingWidget from '../../src/components/LoadingWidget';
 import ResultWidget from '../../src/components/ResultWidget';
 import QuestionWidget from '../../src/components/QuestionWidget';
-import GitHubCorner from '../../src/components/GitHubCorner';
 
 export default function QuizPage() {
-  const [screenState, setScreenState] = useState('LOADING'); 
-  const [results, setResults] = useState([]); 
+  const [screenState, setScreenState] = useState('LOADING');
+  const [results, setResults] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questionIndex = currentQuestion;
   const question = db.questions[questionIndex];
@@ -24,7 +22,7 @@ export default function QuizPage() {
       result,
     ]);
     setScreenState('LOADING');
-  } 
+  }
 
   useEffect(() => {
     const nextQuestion = questionIndex + 1;
@@ -49,7 +47,6 @@ export default function QuizPage() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-        <QuizLogo />
           {screenState === 'LOADING' && <LoadingWidget />}
           {screenState === 'QUIZ' && (
           <QuestionWidget
@@ -62,7 +59,6 @@ export default function QuizPage() {
         )}
         {screenState === 'RESULT' && <ResultWidget results={results} />}
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/lilitbandeira" />
     </QuizBackground>
-  ); 
+  );
 }

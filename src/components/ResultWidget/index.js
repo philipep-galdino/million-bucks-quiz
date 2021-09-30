@@ -23,7 +23,7 @@ const Container = styled.div`
     text-align: center;
     color: ${({ theme}) => theme.colors.extraColor};
     };
-    
+
     p {
     font-weight: 600;
     letter-spacing: .5px;
@@ -77,12 +77,11 @@ export default function ResultWidget({ results }) {
       <Widget.Header>
         Veja seu desempenho
       </Widget.Header>
-        
+
       <Widget.Content>
-        <Anima />
         <Container>
           <h3>
-            {`${finalResult === 0 ? 'Poxa,' : 'Muito bom,'} ${name}! `}
+            {`${finalResult >= 2 ? 'Poxa,' : 'Muito bom,'} ${name}! `}
           </h3>
           <p>
             {finalResult === 0 ? 'Você errou tudo!!!' : `Você fez ${finalResult} de ${totalQuestion} pontos`}
@@ -90,16 +89,16 @@ export default function ResultWidget({ results }) {
             <ul>
                 {results.map((result, index) => (
                   <li key={`result__${result}`}>
-                    Questão {index + 1}:   
+                    Questão {index + 1}:
                     {result === true
-                      ? <>   <i id="good" class="fas fa-check"></i></> 
+                      ? <>   <i id="good" class="fas fa-check"></i></>
                       : <>   <i id="bad" class="fas fa-times"></i></>}
                   </li>
-                ))}     
+                ))}
             </ul>
-            <BackLinkArrow href="/"/>       
+            <BackLinkArrow href="/"/>
         </Container>
       </Widget.Content>
     </Widget>
   );
-} 
+}

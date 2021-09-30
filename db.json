@@ -1,120 +1,98 @@
 {
-    "bg": "https://i0.wp.com/movimentorpg.com.br/wp-content/uploads/2020/04/Demon-Slayer-Kimetsu-no-Yaiba.jpg?fit=2339%2C1654&ssl=1",
-    "title": "Quiz Kimetsu no Yaiba",
-    "description": "Mostre pra todes que você sabe muito sobre Kimetsu no Yaiba, o melhor anime de 2019!",
+    "bg": "https://upload.wikimedia.org/wikipedia/pt/2/20/Showdomilhaosbt.jpg?fit=2339%2C1654&ssl=1",
+    "title": "Show do Milhão Direitíssimo",
+    "description": "Sejam bem vindos e bem vindas a este Show do Milhão! você irá responder perguntas acerca da área de Diversidade e Inclusão. A cada resposta correta, você passa para a próxima pergunta ",
     "questions": [
         {
-          "image": "https://media.giphy.com/media/J6JazAkCVLId91L4yM/giphy.gif",
-          "title": "Qual nome da primeira habilidade do Tanjiro?",
-          "description": "Easy",
-          "answer": 2,
-          "alternatives": [
-            "Dragão de Água",
-            "Dança do Deus da Água",
-            "Respiração da Água",
-            "Demônio de Água"
-          ]
-        },
-        {
-          "image": "https://media.giphy.com/media/Tk72PfpE5RVcZF8XHN/giphy.gif",
-          "title": "Quem transformou a Nezuko em demônio?",
-          "description": "Easy",
-          "answer": 0,
-          "alternatives": [
-             "Muzan Kibutsuji",
-             "Tanjiro Kamado",
-             "Zenitsu Agatsuma",
-             "Shinobu Kocho"
-          ]
-        },
-        {
-          "image": "https://media.giphy.com/media/fTn01fiFdTd5pL60ln/giphy.gif",
-          "title": "Qual nome deste personagem que usa a Respiração do Trovão?",
-          "description": "Easy",
+          "title": "De acordo com o conceito de cidadania, qual opção encontra-se incorreta?",
           "answer": 3,
           "alternatives": [
-             "Inosuke Hashibira",
-             "Jigoro Kuwajima",
-             "Genya Shinazugawa",
-             "Zenitsu Agatsuma"
+            "Refere-se a ser membro de um Estado",
+            "Refere-se a uma instituição político-jurídica de inclusão na sociedade",
+            "Condição de pessoa que não se acha no gozo de deveres, apenas de direitos",
+            "É a prática dos direitos e deveres de um indivíduo em um Estado"
           ]
         },
         {
-          "image": "https://66.media.tumblr.com/7d00d16b845cfaea1348336d8a2d6a4e/ddaa859f1bf7a6f7-a7/s540x810/9dc80dce553c968860c0d616b1bbe1e63181d836.gif",
-          "title": "Qual tipo de Respiração utilizada exclusivamente por Inosuke?",
-          "description": "Medium",
-          "answer": 2,
+          "title": "De acordo com o conceito de diversidade cultural, qual opção encontra-se incorreta?",
+          "answer": 4,
           "alternatives": [
-             "Respiração da Alma",
-             "Respiração da Fera",
-             "Respiração da Besta",
-             "Respiração da Força"
+            "Refere-se aos diferentes costumes e tradições de um povo",
+            "Pode ser representada através da língua, crenças e comportamentos",
+            "Refere-se à inclusão de diferentes perspectivas culturais de uma sociedade",
+            "A diversidade cultural tem sua origem através da igualdade regional entre as culturas"
           ]
         },
         {
-          "image": "https://media.giphy.com/media/S6C1GLnJjTL6xbw5ZJ/giphy.gif",
-          "title": "Qual nome da lâmina especial usada por caçadores para matar demônios?",
-          "description": "Medium",
+          "title": "Qual nome se dá a existência de variadas culturas em uma única região, cidade ou país?",
           "answer": 1,
           "alternatives": [
-             "Giyu Tomioka",
-             "Lâmina Nichirin",
-             "Lâmina Shikikaku",
-             "Omoitsuki no nagesaki"
+            "Multiculturalismo",
+            "Diversidade cultural",
+            "Cultura",
+            "Sociedade"
           ]
         },
         {
-          "image": "https://media.giphy.com/media/f7k6TfAFkiAqKVcJGH/giphy.gif",
-          "title": "Qual nome dado aos 9 mais poderosos mestres de espadas dentre os caçadores de demônios ?",
-          "description": "Medium",
-          "answer": 2,
-          "alternatives": [
-             "Ubuyashiki",
-             "Tsuguko",
-             "Hashira",
-             "Kakushi"
-          ]
-        },
-        {
-          "image": "https://media.giphy.com/media/Yq1tXTNe5PDdQEhKXG/giphy.gif",
-          "title": "Como se chama a Hashira mestra da Respiração de insetos?",
-          "description": "Hard",
+          "title": "De acordo com o conceito de diversidade sexual, qual opção encontra-se correta?",
           "answer": 3,
           "alternatives": [
-             "Giyu Tomioka",
-             "Kanao Tsuyuri",
-             "Nezuko Kamado",
-             "Shinobu Kocho"
+            "É um termo usado para se referir apenas ao sexo biológico",
+            "Refere-se ao sexo biológico e a identidade de gênero, sendo excluído a orientação sexual",
+            "Tem como eixos fundamentais o sexo biológico, a identidade de gênero e a orientação sexual",
+            "Não existe ligação entre diversidade cultural e igualdade de gênero"
           ]
         },
         {
-          "image": "https://media.giphy.com/media/dyjrpqaUVqCELGuQVr/giphy.gif",
-          "title": "Em que momento Tanjiro domina a dança do Deus do Fogo?",
-          "description": "Hard",
+          "title": "De acordo com o conceito de entidade familiar, qual opção encontra-se correta?",
           "answer": 2,
           "alternatives": [
-             "Na luta contra Giyu Tomioka",
-             "Na luta contra Genya",
-             "Na luta contra Rui",
-             "Na luta contra Shinobu Kocho"
+            "É originada apenas por meio do casamento",
+            "A união de pessoas do mesmo sexo faz parte do conceito de entidade familiar",
+            "Entende-se como apenas a união de duas pessoas do sexo oposto",
+            "Não pode ser originada por meio da união estável"
           ]
         },
         {
-          "image": "https://media.giphy.com/media/JrHB5IyuBzKwPEPZe4/giphy.gif",
-          "title": "Como se chama a habilidade de chamas de Nezuko criada a partir do seu sangue?",
-          "description": "Hard",
-          "answer": 0,
+          "title": "De acordo com o conceito de diversidade religiosa, qual opção encontra-se correta?",
+          "answer": 3,
           "alternatives": [
-             "Sangue explosivo",
-             "Chama demoníaca",
-             "Transformação demoníaca",
-             "Manipulação de sangue"
+            "Se caracteriza pela inexistência de grupos religiosos em um mesmo espaço social",
+            "Não existe a proteção da diversidade religiosa na CF/88",
+            "Tem como fundamento o princípio da liberdade de consciência e crença",
+            "Na forma da lei, é assegurada a liberdade de crença, mas não a proteção dos cultos"
+          ]
+        },
+        {
+          "title": "Responda corretamente de acordo com o conceito de diversidade religiosa",
+          "answer": 4,
+          "alternatives": [
+            "O Brasil, sendo um país laico, não faz a separação institucional da autonomia do Estado com as religiões",
+            "Deve ser respeitado qualquer forma de crença religiosa, excluído o ateísmo",
+            "Apenas as religiões monoteístas fazem parte do conceito de diversidade religiosa",
+            "A diversidade religiosa se manifesta em diferentes crenças e cultos ao redor do mundo"
+          ]
+        },
+        {
+          "title": "De acordo com o tema sobre igualdade racial, qual opção encontra-se correta?",
+          "answer": 1,
+          "alternatives": [
+            "Tem relação com a defesa dos direitos étnicos e o combate à discriminação",
+            "Caracteriza-se pela desigualdade social entre brancos e negros",
+            "Apenas o Estatuto da Igualdade Racial visa coibir a discriminação racial",
+            "A CF/88 visa garantir à população negra apenas os direitos coletivos"
+          ]
+        },
+        {
+          "title": "Qual o nome do cantor que em 1971 atingiu as paradas de sucesso com o hit “Imagine”? Música que trazia um mundo utópico onde guerras, pobrezas e lutas sociais não existiriam.",
+          "answer": 2,
+          "alternatives": [
+             "Paul McCartney",
+             "John Lennon",
+             "Elton John",
+             "Jon Bon Jovi"
           ]
         }
-      ],
-      "external": [
-        "https://aluraquiz-css.omariosouto.vercel.app/",
-        "https://rpdr-quiz.lucasgmelo.vercel.app/"
       ],
     "theme": {
       "colors": {

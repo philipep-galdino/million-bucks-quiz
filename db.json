@@ -5,7 +5,7 @@
     "questions": [
         {
           "title": "De acordo com o conceito de cidadania, qual opção encontra-se incorreta?",
-          "answer": 3,
+          "answer": 2,
           "alternatives": [
             "Refere-se a ser membro de um Estado",
             "Refere-se a uma instituição político-jurídica de inclusão na sociedade",
@@ -15,7 +15,7 @@
         },
         {
           "title": "De acordo com o conceito de diversidade cultural, qual opção encontra-se incorreta?",
-          "answer": 4,
+          "answer": 3,
           "alternatives": [
             "Refere-se aos diferentes costumes e tradições de um povo",
             "Pode ser representada através da língua, crenças e comportamentos",
@@ -35,7 +35,7 @@
         },
         {
           "title": "De acordo com o conceito de diversidade sexual, qual opção encontra-se correta?",
-          "answer": 3,
+          "answer": 2,
           "alternatives": [
             "É um termo usado para se referir apenas ao sexo biológico",
             "Refere-se ao sexo biológico e a identidade de gênero, sendo excluído a orientação sexual",
@@ -45,7 +45,7 @@
         },
         {
           "title": "De acordo com o conceito de entidade familiar, qual opção encontra-se correta?",
-          "answer": 2,
+          "answer": 1,
           "alternatives": [
             "É originada apenas por meio do casamento",
             "A união de pessoas do mesmo sexo faz parte do conceito de entidade familiar",
@@ -91,6 +91,26 @@
              "John Lennon",
              "Elton John",
              "Jon Bon Jovi"
+          ]
+        },
+        {
+          "title": "De acordo com o Estatuto do Índio, responda a opção correta",
+          "answer": 3,
+          "alternatives": [
+            "O Estatuto do Índio estabelece que a União poderá, apenas em algumas partes do território nacional, destinar áreas de terras à posse e ocupação pelos índios",
+            "Os índios são considerados como uma categoria social transitória, não sendo incorporados à comunhão nacional",
+            "O direito á terra não faz parte dos direitos dos povos indígenas do Brasil ",
+            "O Estatuto do Índio visa preservar sua cultura e integrá-los à comunhão nacional"
+          ]
+        },
+        {
+          "title": "Quais das opções abaixo, representam relações de inclusão e reconhecimento nos direitos humanos?",
+          "answer": 0,
+          "alternatives": [
+            "Assimetria e Circularidade",
+            "Circularidade e Inclusão",
+            "Assimetria e Inclusão",
+            "Inclusão e Reconhecimento"
           ]
         }
       ],

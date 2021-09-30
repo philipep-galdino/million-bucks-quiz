@@ -25,7 +25,7 @@
         },
         {
           "title": "Qual nome se dá a existência de variadas culturas em uma única região, cidade ou país?",
-          "answer": 1,
+          "answer": 0,
           "alternatives": [
             "Multiculturalismo",
             "Diversidade cultural",
@@ -55,7 +55,7 @@
         },
         {
           "title": "De acordo com o conceito de diversidade religiosa, qual opção encontra-se correta?",
-          "answer": 3,
+          "answer": 2,
           "alternatives": [
             "Se caracteriza pela inexistência de grupos religiosos em um mesmo espaço social",
             "Não existe a proteção da diversidade religiosa na CF/88",
@@ -65,7 +65,7 @@
         },
         {
           "title": "Responda corretamente de acordo com o conceito de diversidade religiosa",
-          "answer": 4,
+          "answer": 3,
           "alternatives": [
             "O Brasil, sendo um país laico, não faz a separação institucional da autonomia do Estado com as religiões",
             "Deve ser respeitado qualquer forma de crença religiosa, excluído o ateísmo",
@@ -75,7 +75,7 @@
         },
         {
           "title": "De acordo com o tema sobre igualdade racial, qual opção encontra-se correta?",
-          "answer": 1,
+          "answer": 0,
           "alternatives": [
             "Tem relação com a defesa dos direitos étnicos e o combate à discriminação",
             "Caracteriza-se pela desigualdade social entre brancos e negros",
@@ -85,7 +85,7 @@
         },
         {
           "title": "Qual o nome do cantor que em 1971 atingiu as paradas de sucesso com o hit “Imagine”? Música que trazia um mundo utópico onde guerras, pobrezas e lutas sociais não existiriam.",
-          "answer": 2,
+          "answer": 1,
           "alternatives": [
              "Paul McCartney",
              "John Lennon",

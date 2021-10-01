@@ -57,11 +57,11 @@ const Anima = styled.section`
     background-size: cover;
 `;
 
-export default function ResultWidget({ results }) {
+export default function ResultWidget({ results, failed }) {
   const router = useRouter();
   const { name } = router.query;
-  const finalResult = results.filter((x) => x).length * 10;
-  const totalQuestion = results.length * 10;
+  const finalResult = results && results.filter((x) => x).length * 10;
+  const totalQuestion = results && results.length * 10;
 
   return (
     <Widget
@@ -79,13 +79,25 @@ export default function ResultWidget({ results }) {
       </Widget.Header>
 
       <Widget.Content>
-        <Container>
-          <h3>
-            {`${finalResult >= 2 ? 'Poxa,' : 'Muito bom,'} ${name}! `}
-          </h3>
-          <p>
-            {finalResult === 0 ? 'Você errou tudo!!!' : `Você fez ${finalResult} de ${totalQuestion} pontos`}
-          </p>
+        {failed
+          ?
+          <Container>
+            <h3>
+              Você não sobreviveu o show do milhão!!
+            </h3>
+            <p>
+              Parece que você não conseguiu acertar pelo menos 5 questões... Você sai de mãos abanando! Estude mais.
+            </p>
+              <BackLinkArrow href="/"/>
+          </Container>
+          :
+          <Container>
+            <h3>
+              {`${finalResult <= 2 ? 'Poxa,' : 'Muito bom,'} ${name}! `}
+            </h3>
+            <p>
+              {finalResult === 0 ? 'Você errou tudo!!!' : `Você fez ${finalResult} de ${totalQuestion} pontos`}
+            </p>
             <ul>
                 {results.map((result, index) => (
                   <li key={`result__${result}`}>
@@ -97,7 +109,8 @@ export default function ResultWidget({ results }) {
                 ))}
             </ul>
             <BackLinkArrow href="/"/>
-        </Container>
+          </Container>
+        }
       </Widget.Content>
     </Widget>
   );

@@ -9,8 +9,6 @@ import QuizContainer from '../src/components/QuizContainer';
 import Footer from '../src/components/Footer';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
-import QuizGalera from '../src/components/QuizGalera';
-import Link from '../src/components/Link';
 
 export default function Home() {
     const router = useRouter();
@@ -29,29 +27,28 @@ export default function Home() {
                   initial="before"
                   animate="after"
                 >
-                    <Widget.Header>
-                            <h1>{db.title}</h1>
-                        </Widget.Header>
-                    <Widget.Content>
-                        <p>{db.description}</p><br/>
-                        <form onSubmit={function(e) {
-                            e.preventDefault();
-                            router.push(`/quiz?name=${name}`)
-                        }}
-                        >
-                            <Input
-                                name = 'Nome do usuário'
-                                onChange = {(event) => setName(event.target.value)}
-                                placeholder="Qual seu nome?"
-                                value={name}
-                                maxLength={15}
-                           />
-                            <Button type="submit" disabled={name.length === 0}>
-                                {`Jogar como ${name}`}
-                            </Button>
-                        </form>
-
-                    </Widget.Content>
+                  <Widget.Header>
+                    <h1>{db.title}</h1>
+                  </Widget.Header>
+                  <Widget.Content>
+                    <p>{db.description}</p><br/>
+                    <form onSubmit={function(e) {
+                        e.preventDefault();
+                        router.push(`/quiz?name=${name}`)
+                    }}
+                    >
+                      <Input
+                          name = 'Nome do usuário'
+                          onChange = {(event) => setName(event.target.value)}
+                          placeholder="Qual seu nome?"
+                          value={name}
+                          maxLength={15}
+                      />
+                      <Button type="submit" disabled={name.length === 0}>
+                          {`Jogar como ${name}`}
+                      </Button>
+                    </form>
+                  </Widget.Content>
                 </Widget>
 
                 <Widget

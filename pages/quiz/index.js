@@ -12,32 +12,56 @@ export default function QuizPage() {
   const [screenState, setScreenState] = useState('LOADING');
   const [results, setResults] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [failed, setFailed] = useState(false)
+
   const questionIndex = currentQuestion;
   const question = db.questions[questionIndex];
   const totalQuestions = db.questions.length;
+
+  function addFail(failure) {
+    setFailed(failure)
+    setScreenState('FAILED')
+  }
 
   function addResult(result) {
     setResults([
       ...results,
       result,
     ]);
+    if (results[0] === false) {
+      setFailed(true)
+      setScreenState('RESULT');
+    }
     setScreenState('LOADING');
   }
 
   useEffect(() => {
-    const nextQuestion = questionIndex + 1;
+    let nextQuestion = Math.floor(Math.random() * totalQuestions);
+
+    console.log(screenState)
+
+    if(failed) {
+      setScreenState('FAILED')
+      nextQuestion = 0
+    }
+
     if (nextQuestion === totalQuestions) {
       setScreenState('RESULT');
     } else {
       setTimeout(() => {
       setScreenState('QUIZ');
-      }, 1.5 * 1000);
+      }, 1 * 1000);
     }
   }, [results]);
 
   function handleSubmitQuiz() {
-    const nextQuestion = questionIndex + 1;
-    if (nextQuestion < totalQuestions) {
+    let nextQuestion = Math.floor(Math.random() * totalQuestions);
+
+    if(failed) {
+      setScreenState('FAILED')
+    }
+
+    if (nextQuestion < totalQuestions && failed === false) {
       setCurrentQuestion(nextQuestion);
     } else {
       setScreenState('RESULT');
@@ -47,16 +71,18 @@ export default function QuizPage() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-          {screenState === 'LOADING' && <LoadingWidget />}
-          {screenState === 'QUIZ' && (
+        {screenState === 'LOADING' && <LoadingWidget />}
+        {screenState === 'QUIZ' && (
           <QuestionWidget
             question={question}
             questionIndex={questionIndex}
             totalQuestions={totalQuestions}
             onSubmit={handleSubmitQuiz}
             addResult={addResult}
+            addFail={addFail}
           />
         )}
+        {screenState === 'FAILED' && <ResultWidget failed={failed} />}
         {screenState === 'RESULT' && <ResultWidget results={results} />}
       </QuizContainer>
     </QuizBackground>

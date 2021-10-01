@@ -9,16 +9,15 @@ import BackLinkArrow from '../../../src/components/BackLinkArrow';
 export default function QuestionWidget({
   question,
   questionIndex,
-  totalQuestions,
   onSubmit,
   addResult,
+  addFail,
 }) {
   const [selectedAlternative, setSelectedAlternative] = useState(undefined);
   const [isQuestionSubmited, setIsQuestionSubmited] = useState(false);
   const questionId = `question__${questionIndex}`;
   const isCorrect = selectedAlternative === question.answer;
   const hasAlternativeSelected = selectedAlternative !== undefined;
-
 
   return (
     <Widget
@@ -33,9 +32,6 @@ export default function QuestionWidget({
     >
       <Widget.Header>
         <BackLinkArrow href="/"/>
-        <h3>
-          {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
-        </h3>
       </Widget.Header>
       <Widget.Content>
         <h2>
@@ -50,6 +46,9 @@ export default function QuestionWidget({
             setIsQuestionSubmited(true);
             setTimeout(() => {
               addResult(isCorrect);
+              if(isCorrect === false) {
+                addFail(true)
+              }
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
